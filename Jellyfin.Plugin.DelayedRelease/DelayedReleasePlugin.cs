@@ -27,13 +27,13 @@ namespace Jellyfin.Plugin.DelayedRelease
         /// <summary>
         /// Gets current plugin instance.
         /// </summary>
-        public static DelayedReleasePlugin? Instance { get; private set; }
+        public static DelayedReleasePlugin Instance { get; private set; }
 
         /// <inheritdoc />
         public override string Name => "Delayed Release";
 
         /// <inheritdoc />
-        public override Guid Id => new Guid("b7decd4f-e20d-45f5-b16b-da6f55d456a1");
+        public override Guid Id => Guid.Parse("b7decd4f-e20d-45f5-b16b-da6f55d456a1");
 
         /// <inheritdoc />
         public IEnumerable<PluginPageInfo> GetPages()
