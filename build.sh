@@ -18,7 +18,7 @@ cat > Jellyfin.Plugin.DelayedRelease/bin/Debug/net8.0/meta.json << EOF
   "owner": "your-username",
   "targetAbi": "10.10.0.0",
   "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%S.0000000Z")",
-  "version": "0.0.0.1",
+  "version": "0.0.0.2",
   "status": "Active",
   "autoUpdate": false,
   "imagePath": "",

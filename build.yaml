@@ -1,7 +1,7 @@
 name: "Delayed Release"
 guid: "b7decd4f-e20d-45f5-b16b-da6f55d456a1"
 imageUrl: ""
-version: "0.0.0.1"
+version: "0.0.0.2"
 targetAbi: "10.10.0.0"
 framework: "net8.0"
 owner: "your-username"
