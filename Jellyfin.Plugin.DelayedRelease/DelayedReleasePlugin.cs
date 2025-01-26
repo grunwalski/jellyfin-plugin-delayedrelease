@@ -40,7 +40,7 @@ namespace Jellyfin.Plugin.DelayedRelease
         /// <summary>
         /// Gets the current plugin instance.
         /// </summary>
-        public static DelayedReleasePlugin? Instance { get; private set; }
+        public static DelayedReleasePlugin Instance { get; private set; }
 
         /// <inheritdoc />
         public IEnumerable<PluginPageInfo> GetPages()
