@@ -8,6 +8,11 @@
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
     <CodeAnalysisRuleSet>../jellyfin.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>Jellyfin.Plugin.DelayedRelease</AssemblyName>
+    <RootNamespace>Jellyfin.Plugin.DelayedRelease</RootNamespace>
+    <Version>0.0.0.1</Version>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <FileVersion>0.0.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,12 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jellyfin.Data" Version="10.*-*" />
-    <PackageReference Include="Jellyfin.Controller" Version="10.*-*" />
-    <PackageReference Include="Jellyfin.Common" Version="10.*-*" />
-    <PackageReference Include="Jellyfin.Model" Version="10.*-*" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
-    <PackageReference Include="Tvdb.Sdk" Version="4.7.10" />
+    <PackageReference Include="Jellyfin.Data" Version="10.8.13" />
+    <PackageReference Include="Jellyfin.Controller" Version="10.8.13" />
+    <PackageReference Include="Jellyfin.Common" Version="10.8.13" />
+    <PackageReference Include="Jellyfin.Model" Version="10.8.13" />
   </ItemGroup>
 
   <!-- Code Analyzers-->

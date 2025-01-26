@@ -1,20 +1,17 @@
-name: "TheTVDB"
-guid: "a677c0da-fac5-4cde-941a-7134223f14c8"
-imageUrl: "https://repo.jellyfin.org/releases/plugin/images/jellyfin-plugin-tvdb.png"
-version: 18
+name: "Delayed Release"
+guid: "b7decd4f-e20d-45f5-b16b-da6f55d456a1"
+imageUrl: ""
+version: "0.0.0.1"
 targetAbi: "10.10.0.0"
 framework: "net8.0"
-owner: "jellyfin"
-overview: "Get TV metadata from TheTvdb"
+owner: "your-username"
+overview: "A plugin for delayed release of media"
 description: >
-  Get TV metadata from TheTvdb
+  A plugin that allows you to control when media becomes available in your library.
 
-category: "Metadata"
+category: "General"
 artifacts:
-  - "Jellyfin.Plugin.Tvdb.dll"
-  - "Tvdb.Sdk.dll"
+  - "Jellyfin.Plugin.DelayedRelease.dll"
 changelog: |2-
-  ### Bug Fixes ###
-  - Increase robustness of retrieving tmdb id (again) (#194) @scampower3
-  - Fix orphaned episodes deletion (#195) @scampower3
-  - Queue refresh after adding child (#196) @scampower3
+  ### Initial Release ###
+  - Basic plugin structure
