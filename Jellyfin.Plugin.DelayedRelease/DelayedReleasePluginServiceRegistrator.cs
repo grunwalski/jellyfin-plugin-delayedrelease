@@ -1,1 +1,21 @@
-using MediaBrowser.Common.Plugins;using MediaBrowser.Controller.Library;using Microsoft.Extensions.DependencyInjection;using Microsoft.Extensions.Logging;namespace Jellyfin.Plugin.DelayedRelease{public class DelayedReleasePluginServiceRegistrator : IPluginServiceRegistrator{public void RegisterServices(IServiceCollection serviceCollection){serviceCollection.AddLogging(configure => configure.AddConsole());serviceCollection.AddSingleton<ILogger>(sp => sp.GetRequiredService<ILogger<DelayedReleasePlugin>>());serviceCollection.AddSingleton<ILibraryPostScanTask, DelayedReleaseScheduler>();}}}
+using Jellyfin.Plugin.DelayedRelease.ScheduledTasks;
+using MediaBrowser.Common.Plugins;
+using MediaBrowser.Controller;
+using MediaBrowser.Controller.Library;
+using MediaBrowser.Controller.Plugins;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Jellyfin.Plugin.DelayedRelease
+{
+    /// <summary>
+    /// Service registrator for the DelayedRelease plugin.
+    /// </summary>
+    public class DelayedReleasePluginServiceRegistrator : IPluginServiceRegistrator
+    {
+        /// <inheritdoc />
+        public void RegisterServices(IServiceCollection serviceCollection, IServerApplicationHost applicationHost)
+        {
+            // Keine explizite Registrierung nötig - Jellyfin findet IScheduledTask-Implementierungen automatisch
+        }
+    }
+}
