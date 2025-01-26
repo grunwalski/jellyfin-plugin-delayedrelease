@@ -16,7 +16,7 @@ cat > Jellyfin.Plugin.DelayedRelease/bin/Debug/net8.0/meta.json << EOF
   "name": "Delayed Release",
   "overview": "A plugin for delayed release of media",
   "owner": "your-username",
-  "targetAbi": "10.10.0.0",
+  "targetAbi": "10.*",
   "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%S.0000000Z")",
   "version": "0.0.0.2",
   "status": "Active",
